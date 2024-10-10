@@ -1,11 +1,3 @@
-const enunciados = ["",
-    "O que entendi do assunto?",
-    "Como posso ensinar alguém?",
-    "Quais exemplos podem ilustrar minhas explicações?",
-    "O que não entendi do assunto?",
-    "Como estudo?",
-];
-
 const conteudo = {titulo: 0,
     entendimento:   1,
     ensino:         2,
@@ -30,6 +22,14 @@ frac = function(a, b) {return `<sup>${a}</sup>/<sub>${b}</sub>`;}
 s = function(n) {
     return `<sub>${n}</sub>`;
 }
+
+const enunciados = ["",
+    "O que entendi do assunto?",
+    "Como posso ensinar alguém?",
+    "Quais exemplos podem ilustrar minhas explicações?",
+    "O que não entendi do assunto?",
+    "Como estudo?",
+];
 
 conteudos = [
        ["Sistemas 2x2",
@@ -238,8 +238,31 @@ conteudos = [
         "Não houve dificuldades.",
         "Foi um conteúdo bem breve, mas legal de se trabalhar, já que envolvia o curso. Não tive que estudar."
     ], ["Trigonometria no triângulo retângulo",
-        "",
-        "",
+        "É utilizado para calcular valores em triângulos onde um dos ângulos é 90.",
+        `Teorema de Pitágoras:
+        Cateto oposto (CO): Lado oposto do ângulo analizado
+        Cateto adjacente (CA): Lado adjacente do ânglo analizado
+        Hipotenusa (H): Lado maior e que está contra o ângulo de 90°
+
+        a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>
+        a: Hipotenusa,
+        b: Cateto adjacente
+        c: Cateto oposto
+        
+        cos: ${frac("CA", "H")}
+        sen: ${frac("CO", "H")}
+        tan: ${frac("CO", "CA")}
+
+        Valores Importantes:
+        (1, 2, 3, 3, 2, 1, todo mundo sobre 2, raiz em cada um)
+        ${matriz([
+            ["   ","30°","45°","60°"],
+            ["sen",frac(1,2),frac("√2",2),frac("√3",2)],
+            ["cos",frac("√3",2),frac("√2",2),frac(1,2)],
+            ["tan",frac("√3",3),1,"√3"]
+
+        ])}
+        `,
         ``,
         "",
         ""
