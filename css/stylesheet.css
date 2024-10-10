@@ -1,0 +1,97 @@
+html {
+    text-shadow: #000000 0px 0px 3px;
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.def {
+    display: flex;
+}
+.def p {
+    padding: 5px;
+}
+
+.just {
+    text-align: justify;
+}
+
+.matriz {
+    border-style: none solid;
+    border-color:#FFFFFF;
+    border-width: 2px;
+}
+.matriz td {
+    padding: 5px;
+}
+
+.simples {
+    text-decoration: none;
+    color: white;
+}
+
+table:has(a) {
+    background-color: #121212;
+    top: 0;
+    right: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+td a {
+    box-shadow: #000000 0px 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    border-style: none;
+    color: #FFFFFF;
+    background-color: #332940;
+}
+
+td a:hover {
+    color: #999999;
+    cursor: pointer;
+    background-color: #1F1A24;
+}
+
+div.caixa {
+    width: 80%;
+    box-shadow: #000000 0px 0px 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+    background-color: #1F1A24;
+}
+
+resp {
+    border-color: rgb(0, 148, 74);
+    border-bottom-color: lime;
+    padding: 5px;
+    border-width: 2px;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/* CORES, usei como tags pois achei bem pratico */
+red {color: red}
+orange {color: orange}
+yellow {color: yellow}
+lime {color: lime}
+green {color: green}
+blue {color: blue}
+purple {color: purple}
+magenta {color: magenta}
+white {color: white}
+grey {color: grey}
+black {color: black}
+pink {color: pink}
+lightblue {color:lightblue}
