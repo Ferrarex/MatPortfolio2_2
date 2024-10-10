@@ -296,21 +296,39 @@ inserirConteudo = function (elemento) {
     t.setAttribute("class", "textCenter");
     div.appendChild(t);
 
-    div.appendChild(novoEnunciado(enunciados[conteudo.entendimento]));
-    div.appendChild(novaExplica(muchoTexto(elemento[conteudo.entendimento])));
-    pulaLinha(div);
-    div.appendChild(novoEnunciado(enunciados[conteudo.ensino]));
-    div.appendChild(novaExplica(muchoTexto(elemento[conteudo.ensino])));
-    pulaLinha(div);
-    div.appendChild(novoEnunciado(enunciados[conteudo.exemplos]));
-    div.appendChild(novaExplica(muchoTexto(elemento[conteudo.exemplos])));
-    pulaLinha(div);
-    div.appendChild(novoEnunciado(enunciados[conteudo.aprendizado]));
-    div.appendChild(novaExplica(muchoTexto(elemento[conteudo.aprendizado])));
-    pulaLinha(div);
-    div.appendChild(novoEnunciado(enunciados[conteudo.estudo]));
-    div.appendChild(novaExplica(muchoTexto(elemento[conteudo.estudo])));
+    a = elemento[conteudo.entendimento];
+    if (a != "") {
+        div.appendChild(novoEnunciado(enunciados[conteudo.entendimento]));
+        div.appendChild(novaExplica(muchoTexto(a)));
+        pulaLinha(div);
+    }
 
+    a = elemento[conteudo.ensino];
+    if (a != "") {
+        div.appendChild(novoEnunciado(enunciados[conteudo.ensino]));
+        div.appendChild(novaExplica(muchoTexto(a)));
+        pulaLinha(div);
+    }
+    
+    a = elemento[conteudo.exemplos];
+    if (a != "") {
+        div.appendChild(novoEnunciado(enunciados[conteudo.exemplos]));
+        div.appendChild(novaExplica(muchoTexto(a)));
+        pulaLinha(div);
+    }
+
+    a = elemento[conteudo.aprendizado];
+    if (a != "") {
+        div.appendChild(novoEnunciado(enunciados[conteudo.aprendizado]));
+        div.appendChild(novaExplica(muchoTexto(a)));
+        pulaLinha(div);
+    }
+
+    a = elemento[conteudo.estudo];
+    if (a != "") {
+        div.appendChild(novoEnunciado(enunciados[conteudo.estudo]));
+        div.appendChild(novaExplica(muchoTexto(a)));
+    }
     document.body.appendChild(div);
     pulaLinha(document.body);
 }
