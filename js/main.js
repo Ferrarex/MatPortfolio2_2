@@ -263,9 +263,9 @@ conteudos = [
 
         ])}
         `,
-        ``,
-        "",
-        ""
+        `O exercício dado em aula para medir coisas do Campus é um bom exemplo do uso prático desse tipo de calculo, onde facilita (ou as vezes torna possível) a medição de algo em específico. É um dos conteúdos mais fáceis de complementar ao dia a dia.`,
+        "É chato de identificar em que momento usar uma função em específico, mas não é dificil.",
+        "É meio decoreba, algumas coisas ajudam, como a musiquinha que disse."
     ], ["Trigonometria num triângulo qualquer",
         "",
         "",
