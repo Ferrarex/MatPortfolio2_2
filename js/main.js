@@ -294,17 +294,22 @@ conteudos = [
         1 Radiano é um raio estendido sobre a circunferência.
         Por consequência, π rad = 180° e 2π rad = 360°
         ${matriz([["π","y"],["180°","x°"]])}
-
         `,
         ``,
-        "",
-        ""
+        "Não houve dúvidas, conteúdo simples.",
+        "Apenas uma revisada superficial é suficiente, conteúdo bem sucinto."
     ], ["Ciclo trigonométrico",
-        "",
-        "",
+        "É usado pra apresentar os conceitos acima de forma gráfica e tangível, é um circulo com marcações de ângulos e valores.",
+        `O círculo é dividido em 4 quadrantes, cada um com diferença de 90° entre eles, o ângulo é demarcado do 0 para a direita, onde ao curvar no sentido horário, diminui o angulo, e ao contrario o aumenta.
+
+        Primeira Determinação Positiva:
+        Em graus: É o módulo do ângulo e 360
+        Em radianos: Deve estar entre 0 e 2π, então é o módulo da quantidade de radianos e 2π.
+
+        Acredito que a maneira ensinada em aula foi bastante lúdica e simples, gostei da maneira como foi explicado.`,
         ``,
-        "",
-        ""
+        "Não consegui entender muito bem o assunto sobre ângulos congruentes e coisas do tipo, e necessito revisar.",
+        "Os materiais desenvolvidos são um ótimo material de estudo para esse conteúdo."
     ]
 ];
 
