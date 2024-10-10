@@ -281,8 +281,21 @@ conteudos = [
         "Não consegui entender a prova das Leis, e a Lei dos Cossenos foi meio dificil de decorar.",
         "Estudei as fórmulas, e tentei integrar com os conteúdos que tenho acesso no cotidiano, como esse caso em que foi utilizado."
     ], ["Arcos",
-        "",
-        "",
+        "Arco seria uma quantidade específica da circunferência do círculo.",
+        `Fórmulas:
+        Comprimento do Arco (regra de 3):
+        ${matriz([["2πr", "360°"],["l", "α"]])}
+
+        Radiano para Grau
+        1 rad ≅ 57,2958°
+        0,0174533 rad ≅ 1°
+
+        O que é radiano?:
+        1 Radiano é um raio estendido sobre a circunferência.
+        Por consequência, π rad = 180° e 2π rad = 360°
+        ${matriz([["π","y"],["180°","x°"]])}
+
+        `,
         ``,
         "",
         ""
@@ -387,11 +400,9 @@ conteudos.forEach(e => inserirConteudo(e));
 
 conclusao = document.createElement("div");
 conclusao.setAttribute("class", "caixa");
-
 conclusaoTit = document.createElement("h1");
 conclusaoTit.setAttribute("class", "textCenter");
 conclusaoTit.innerHTML = "Conclusão";
-
 conclusaoText = document.createElement("h3");
 conclusaoText.style.textAlign = "justify";
 conclusaoText.innerHTML = muchoTexto(
@@ -402,8 +413,20 @@ Foi um dos trimestres mais leves, e a Matemática foi a mais simples comparada a
 
 Um ponto importante a ressaltar seriam as atitutes dos alunos, que ao fazerem muitas conversas paralelas, acabam desconcentrando os interessados no conteúdo e fazendo interrompimento da aula para que a prof. chame sua atenção. Gostaria que fosse feita a retirada desses alunos da aula, já que não contribuem, assim ajudando os que não se concentram facilmente.`
 );
-
 conclusao.appendChild(conclusaoTit);
 conclusao.appendChild(conclusaoText);
-
 document.body.appendChild(conclusao);
+
+pulaLinha(document.body);
+
+disclaimer = document.createElement("div");
+disclaimer.setAttribute("class", "caixa");
+disclaimerTit = document.createElement("h1");
+disclaimerTit.setAttribute("class", "textCenter");
+disclaimerTit.innerHTML = "Isenção de responsabilidade";
+disclaimerText = document.createElement("h3");
+disclaimerText.style.textAlign = "justify";
+disclaimerText.innerHTML = muchoTexto(`Momentos em que não é citado a fonte externa, são onde o material foi retirado dos conteúdos repassados pela professora durante as aulas.`);
+disclaimer.appendChild(disclaimerTit);
+disclaimer.appendChild(disclaimerText);
+document.body.appendChild(disclaimer);
