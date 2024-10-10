@@ -267,11 +267,19 @@ conteudos = [
         "É chato de identificar em que momento usar uma função em específico, mas não é dificil.",
         "É meio decoreba, algumas coisas ajudam, como a musiquinha que disse."
     ], ["Trigonometria num triângulo qualquer",
-        "",
-        "",
-        ``,
-        "",
-        ""
+        "É utilizado quando não tem um triângulo retângulo, da mesma forma que o outro, ajuda a conseguir valores ou pular etapas de medição.",
+        `Leis:
+        Lei dos Senos:
+        ${frac("a", "sen(Â)")} = ${frac("b","sen(B̂)")} = ${frac("c", "sen(Ĉ)")}
+
+        Lei dos Cossenos:
+        a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> - 2 * b * c * cos(Â)
+        b<sup>2</sup> = a<sup>2</sup> + c<sup>2</sup> - 2 * a * c * cos(B̂)
+        c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> - 2 * a * b * cos(Ĉ)
+        `,
+        `Há um tempo atrás, quando estava programando a trajetória de um projétil em um jogo que estava produzindo, me deparei com uma situação em que foi necessário o uso da Lei dos Senos para interpolar dois pontos em uma curva.`,
+        "Não consegui entender a prova das Leis, e a Lei dos Cossenos foi meio dificil de decorar.",
+        "Estudei as fórmulas, e tentei integrar com os conteúdos que tenho acesso no cotidiano, como esse caso em que foi utilizado."
     ], ["Arcos",
         "",
         "",
